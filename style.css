@@ -33,17 +33,19 @@ body, html {
 	width: 350px;
 	height: 100px;
 	border-radius: 50px;
-	border: none;
+	border: 2px solid white;
 	outline: none;
-	z-index: 2;
-	color: rgb(77,158,156);
+	z-index: 3;
+	color: white;
+	background-color: transparent;
 	font-size: 30px;
+	transition-duration: 0.4s;
 
 }
 
-a.p1-btn: hover {
-	color: grey;
-
+.p1-btn:hover {
+	background-color: white;
+	color: black;
 }
 
 
@@ -66,53 +68,79 @@ a.p1-btn: hover {
 .shop-img {
 	margin: 0px;
 	height: 100vh;
-	width: 50%;
+	width: 50vw;
 	overflow: hidden;
 	z-index: 0;
+	object-fit: cover;
+	object-position: -10% auto;
+
 
 }
 
 .shop-btn {
-	border: none;
-	outline: none;
-	color: rgba(83, 99, 55);
-	font-size: 35px;
 	width: 360px;
 	height: 50px;
 	border-radius: 50px;
+	border: 2px solid white;
+	outline: none;
+	color: white;
+	background-color: rgba(83, 99, 55);
+	font-size: 35px;
+	
 	position: relative;
 	float: right;
 	transform: translate(-50%, 50vh);
-	margin-bottom: 5px;
+	padding-top: 0px;
+	transition-duration: 0.3s;
+}
 
+.shop-btn:hover {
+	color: rgba(83, 99, 55);
+	background-color: white;
 }
 
 /* page 3 */
 .gallary {
+	width: 100%;
+	height: 794px;
 	background-color: rgba(83, 100, 60);
 	margin: 0px;
 
 }
 
-.gal-l {
-	width: 100%;
-	height: 100vh;
-	background-color: rgba(83, 100, 60);
-}
 
 .gal-btn1 {
 	width: 150px;
 	height: 50px;
 	border-radius: 50px;
-	transform: translateY(40vh);
-	align-items: center;
+	transform: translateY(30vh);
+	position: absolute;
+	left: 17vw;
+	background-color: rgba(83, 100, 60);
+	border: 2px white solid;
+	outline: none;
+	font-size: 25px;
+	color: white;
+	letter-spacing: 5px;
+	padding-bottom: 4px;
+	transition-duration: 0.3s;
 }
 
 .gal-btn2 {
 	width: 150px;
 	height: 50px;
 	border-radius: 50px;
-	transform: translateY(50vh);
+	transform: translateY(45vh);
+	position: absolute;
+	left: 17vw;
+	background-color: rgba(83, 100, 60);
+	border: 2px white solid;
+	outline: none;
+	font-size: 25px;
+	color: white;
+	letter-spacing: 5px;
+	padding-bottom: 4px;
+	transition-duration: 0.3s;
 }
 
 .gal-btn3 {
@@ -120,13 +148,29 @@ a.p1-btn: hover {
 	height: 50px;
 	border-radius: 50px;
 	transform: translateY(60vh);
+	position: absolute;
+	left: 17vw;
+	background-color: rgba(83, 100, 60);
+	border: 2px white solid;
+	outline: none;
+	font-size: 25px;
+	color: white;
+	letter-spacing: 5px;
+	padding-bottom: 4px;
+	transition-duration: 0.3s;
+}
+
+.gal-l button:hover {
+	color: rgba(83, 99, 55);
+	background-color: white;
 }
 
 .gal-bg{
 	width: 50%;
-	height: 50;
-	position: relative;
+	height: 100%;
+	position: absolute;
 	float: right;
+	right: 0px;
 	overflow: hidden;
 }
 
